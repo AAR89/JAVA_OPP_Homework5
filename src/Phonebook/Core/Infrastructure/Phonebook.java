@@ -24,14 +24,10 @@ public class Phonebook {
     }
 
     // read
-    public Contact getCotact(int index) {
+    public Contact getContact(int index) {
         return contains(index) ? contacts.get(index) : null;
     }
 
-    // update
-    // ???...
-
-    // delete
     public boolean remove(Contact contact) {
         boolean flag = false;
         if (contacts.contains(contact)) {
@@ -48,7 +44,6 @@ public class Phonebook {
     }
 
     public List<Contact> getContacts() {
-        // if ???...
         return contacts;
     }
 
